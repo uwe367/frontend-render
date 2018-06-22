@@ -10,7 +10,7 @@
   if (!defined('PHPWCMS_ROOT')) {die("You Cannot Access This Script Directly, Have a Nice Day.");}
 // -------------------------------------------------------------------------------------------
 
-if($template_default['cat_id']==1) {
+if(!empty($template_default['cat_id'])) {
     $content['body_id'] = $content['cat_id'];
 }
 ?>
